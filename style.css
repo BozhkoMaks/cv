@@ -311,11 +311,31 @@ button {
     flex-wrap: nowrap;
     padding: auto;
     width: auto;
+    padding: 15px;
   }
   .checkbox-wrapper-5 .check {
-    left: 15%;
+    left: 0;
     top: 7%;
     right: inherit;
   }
 
+  button {
+    right: 0;
+  }
+
+  .about-me {
+    padding: 15px; 
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .checkbox-wrapper-5 .check {
+    left: 0;
+    top: 7%;
+    right: inherit;
+  }
+  button {
+    right: 0;
+  }
 }
