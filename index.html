@@ -12,14 +12,20 @@
     <link rel="stylesheet" href="style.css" />
     <title>About me</title>
   </head>
-  <body >
+  <body>
     <div class="container">
       <div class="row">
         <div class="tabs">
            <div id="content-1">
-            <input type="checkbox" id="dark-theme-toggle">
-            <label for="dark-theme-toggle"></label>
-            <button class="round-button" onclick="downloadFile()">Link to CV</button>
+            <!-- <input type="checkbox" id="dark-theme-toggle">
+            <label for="dark-theme-toggle"></label> -->
+            <div class="checkbox-wrapper-5" id="dark-theme-toggle">
+              <div class="check">
+                <input id="check-5" type="checkbox">
+                <label for="check-5"></label>
+              </div>
+            </div>
+            <button class="round-button" onclick="downloadFile()" >Link to CV</button>
             <div class="info">
               <div class="my-img">
                 <img
@@ -33,16 +39,14 @@
                 <p class="contacts">Contacts</p>
                 <ul class="contacts__ul">
                   <li class="contacts__item">
-                    <a href="mailto:bmw70300@gmail.com">
+                    <a href="mailto:bmw70300@gmail.com" target="_blank">
                       Email me on bmw70300@gmail.com</a
                     >
                   </li>
                   <li class="contacts__item">
-                    <a href="https://t.me/BozhkoMaks"
-                      >Contact me via Telegram</a
-                    >
+                    <a href="https://t.me/BozhkoMaks" target="_blank">Contact me via Telegram</a>
                   </li>
-                  <li class="contacts__item">
+                  <li class="contacts__item" target="_blank">
                     <a href="tel:+380664990792">Call me +380664990792</a>
                   </li>
                 </ul>
@@ -127,11 +131,9 @@
       
       // Create a temporary anchor element
       const link = document.createElement('a');
+      link.setAttribute("target", "_blank")
       link.href = file_url;
-      
-      // Set the download attribute to force download
-      link.setAttribute('download', true);
-      
+     
       // Append the anchor to the body and click it
       document.body.appendChild(link);
       link.click();
