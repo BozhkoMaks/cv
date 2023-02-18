@@ -12,17 +12,14 @@
     <link rel="stylesheet" href="style.css" />
     <title>About me</title>
   </head>
-  <body>
+  <body >
     <div class="container">
       <div class="row">
         <div class="tabs">
-          <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked />
-          <label for="tab-btn-1">English</label>
-          <input type="radio" name="tab-btn" id="tab-btn-3" value="" />
-          <label for="tab-btn-3">Ukranian</label>
-          <input type="radio" name="tab-btn" id="tab-btn-2" value="" />
-          <label for="tab-btn-2">Russian</label>
-          <div id="content-1">
+           <div id="content-1">
+            <input type="checkbox" id="dark-theme-toggle">
+            <label for="dark-theme-toggle"></label>
+            <button class="round-button" onclick="downloadFile()">Link to CV</button>
             <div class="info">
               <div class="my-img">
                 <img
@@ -32,15 +29,7 @@
                 />
               </div>
               <div class="info-text">
-                <h1 class="head-1">Bozhko Maks, Junior Front-End developer</h1>
-                <p class="info__text skills">Skills</p>
-                <ul class="skill-list">
-                  <li class="skill-list__item">HTML/CSS</li>
-                  <li class="skill-list__item">JavaScript</li>
-                  <li class="skill-list__item">Bootstrap/JQUERY</li>
-                  <li class="skill-list__item">CMS (WordPress)</li>
-                </ul>
-
+                <h1 class="head-1">Bozhko Maks</h1>
                 <p class="contacts">Contacts</p>
                 <ul class="contacts__ul">
                   <li class="contacts__item">
@@ -57,14 +46,33 @@
                     <a href="tel:+380664990792">Call me +380664990792</a>
                   </li>
                 </ul>
+                <p class="info__text skills">Skills</p>
+                <ul class="skill-list">
+                  <li class="skill-list__item">Proficient in manual and automated testing</li>
+                  <li class="skill-list__item">Knowledge of software development lifecycle and methodologies</li>
+                  <li class="skill-list__item">Experience with test documentation, including test cases, bug reports, test plans, decision tables, etc.</li>
+                  <li class="skill-list__item">Intermediate English language skills</li>
+                  <li class="skill-list__item">Strong analytical abilities and attention to detail</li>
+                  <li class="skill-list__item">Excellent communication skills</li>
+                  <li class="skill-list__item">Tools: Notion, Slack, 1C, Excel</li>
+                  <li class="skill-list__item">Methodologies: SCRUM, Kanban, Shape Up</li>
+                  <li class="skill-list__item">Test documentation: test cases, bug reports, test plans, decision tables, etc.</li>
+                  <li class="skill-list__item">TMS: qase.io, Jira, TestRail, Confluence</li>
+                  <li class="skill-list__item">SQL: basic requests (SELECT, JOIN)</li>
+                  <li class="skill-list__item">HTML/CSS</li>
+                  <li class="skill-list__item">JavaScript</li>
+                  <li class="skill-list__item">Bootstrap/JQUERY</li>
+                  <li class="skill-list__item">CMS (WordPress)</li>
+                  <li class="skill-list__item">Python</li>
+                </ul>               
               </div>
             </div>
             <div class="about-me">
-              My name is Maks Bozhko, I live in Ukraine and looking for a job
-              Junior Front-End developer, remotely preferred or I can make a
-              web-page for you on a contractual basis.
+              I am a skilled QA engineer with experience in both manual and automated testing. I have a strong understanding of software development methodologies and have worked with a variety of tools, including SCRUM, Kanban, Shape Up, qase.io, Jira, TestRail, Confluence, and SQL. Additionally, I am proficient in Python programming for automation.
+              I am a dedicated and hardworking individual with a passion for quality assurance and software testing. I am constantly seeking to improve my skills and learn new technologies to ensure that I am providing the best possible service to my team and clients. Thank you for considering my application.
+              
             </div>
-            <h2 class="head-2">Work examples</h2>
+            <h2 class="head-2">HTML/CSS examples</h2>
             <div class="my-works">
               <div class="my-works__examples">
                 <iframe
@@ -92,150 +100,6 @@
                 </p>
               </div>
               <div class="my-works__examples frames__empty">
-                <div class="my-works__frames__empty">
-                  Place for YOUR web-page
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="content-2">
-            <div class="info">
-              <div class="my-img">
-                <img
-                  src="images/avatar.jpg"
-                  alt="Maks Bozhko"
-                  class="my-img__img"
-                />
-              </div>
-              <div class="info-text">
-                <h1 class="head-1">Bozhko Maks, Junior Front-End developer</h1>
-                <p class="info__text skills">Навыки</p>
-                <ul class="skill-list">
-                  <li class="skill-list__item">HTML/CSS</li>
-                  <li class="skill-list__item">JavaScript</li>
-                  <li class="skill-list__item">Bootstrap/JQUERY</li>
-                  <li class="skill-list__item">CMS (WordPress)</li>
-                </ul>
-
-                <p class="contacts">Контакты</p>
-                <ul class="contacts__ul">
-                  <li class="contacts__item">
-                    <a href="mailto:bmw70300@gmail.com"
-                      >Написать на почту bmw70300@gmail.com</a
-                    >
-                  </li>
-                  <li class="contacts__item">
-                    <a href="https://t.me/BozhkoMaks"
-                      >Связаться с помощью Телеграм</a
-                    >
-                  </li>
-                  <li class="contacts__item">
-                    <a href="tel:+380664990792">Позвонить +380664990792</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="about-me">
-              Меня зовут Макс Божко, я живу в Украине, город Запорожье, ищу
-              работу джуниора или на договорной основе сделаю вам
-              страничку/сайт.
-            </div>
-            <h2 class="head-2">Примеры работ</h2>
-            <div class="my-works">
-              <div class="my-works__examples">
-                <iframe
-                  class="my-works__frames"
-                  src="https://bozhkomaks.github.io/bt-bhromaon/"
-                  name="iframe"
-                  scrolling="auto"
-                ></iframe>
-                <p>
-                  Самая объемная работа, parallax, slider, медленные якоря и
-                  т.д. Вся работа
-                  <a href="https://bozhkomaks.github.io/bt-bhromaon/">тут</a>
-                </p>
-              </div>
-              <div class="my-works__examples">
-                <iframe
-                  class="my-works__frames"
-                  src="https://bozhkomaks.github.io/bt-cahee/"
-                  name="iframe"
-                  scrolling="auto"
-                ></iframe>
-                <p>
-                  Еще одна экзаменнационная работа, больше
-                  <a href="https://bozhkomaks.github.io/bt-cahee/">тут</a>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div id="content-3">
-            <div class="info">
-              <div class="my-img">
-                <img
-                  src="images/avatar.jpg"
-                  alt="Maks Bozhko"
-                  class="my-img__img"
-                />
-              </div>
-              <div class="info-text">
-                <h1 class="head-1">Bozhko Maks, Junior Front-End developer</h1>
-                <p class="info__text skills">Навички</p>
-                <ul class="skill-list">
-                  <li class="skill-list__item">HTML/CSS</li>
-                  <li class="skill-list__item">JavaScript</li>
-                  <li class="skill-list__item">Bootstrap/JQUERY</li>
-                  <li class="skill-list__item">CMS (WordPress)</li>
-                </ul>
-
-                <p class="contacts">Контакти</p>
-                <ul class="contacts__ul">
-                  <li class="contacts__item">
-                    <a href="mailto:bmw70300@gmail.com"
-                      >Написати на пошту bmw70300@gmail.com</a
-                    >
-                  </li>
-                  <li class="contacts__item">
-                    <a href="https://t.me/BozhkoMaks"
-                      >Зв'язатись через Телеграм</a
-                    >
-                  </li>
-                  <li class="contacts__item">
-                    <a href="tel:+380664990792">Подзвонити +380664990792</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="about-me">
-              Мене звуть Божко Макс, живу в Україні, шукаю місце джуніора,
-              бажано віддаленно або зроблю вам сторінку/сайт за домовленністю.
-            </div>
-            <h2 class="head-2">Приклади робіт</h2>
-            <div class="my-works">
-              <div class="my-works__examples">
-                <iframe
-                  class="my-works__frames"
-                  src="https://bozhkomaks.github.io/bt-bhromaon/"
-                  name="iframe"
-                  scrolling="auto"
-                ></iframe>
-                <p>
-                  Найбільша робота, parallax, slider, повільні якоря і т.д. Вся
-                  робота
-                  <a href="https://bozhkomaks.github.io/bt-bhromaon/">тут</a>
-                </p>
-              </div>
-              <div class="my-works__examples">
-                <iframe
-                  class="my-works__frames"
-                  src="https://bozhkomaks.github.io/bt-cahee/"
-                  name="iframe"
-                  scrolling="auto"
-                ></iframe>
-                <p>
-                  Ще одна екзаменаційна робота, більше
-                  <a href="https://bozhkomaks.github.io/bt-cahee/">тут</a>
-                </p>
               </div>
             </div>
           </div>
@@ -243,4 +107,35 @@
       </div>
     </div>
   </body>
+  <script>
+    const toggleSwitch = document.querySelector('#dark-theme-toggle');
+  
+    function switchTheme(e) {
+      if (e.target.checked) {
+        document.body.classList.add('dark-theme');
+      } else {
+        document.body.classList.remove('dark-theme');
+      }
+    }
+  
+    toggleSwitch.addEventListener('change', switchTheme, false);
+  </script>
+  <script>
+    function downloadFile() {
+      // Replace "file_url" with the URL of the file you want to download
+      const file_url = "https://docs.google.com/document/d/12HpGdR2RNi5WP-3diSJqTeXj5-PlHg36/edit?usp=sharing&ouid=115934608034254238457&rtpof=true&sd=true";
+      
+      // Create a temporary anchor element
+      const link = document.createElement('a');
+      link.href = file_url;
+      
+      // Set the download attribute to force download
+      link.setAttribute('download', true);
+      
+      // Append the anchor to the body and click it
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
 </html>
