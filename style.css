@@ -67,7 +67,6 @@ button {
 
   .checkbox-wrapper-5 .check {
     --size: 40px;
-
     position: absolute;
     right: 15%;
     top: 1%;
@@ -194,13 +193,13 @@ button {
 .info {
   display: flex;
   justify-content: space-around;
-  height: 500px;
+  max-height: 550px;
 }
 
 .info__text {
   text-align: center;
   text-transform: uppercase;
- 
+  
 }
 
 .skill-list {
@@ -210,7 +209,11 @@ button {
   flex-wrap: wrap;
   height: 50%;
   padding: 0;
-  margin-left: 50px;
+  /* margin-left: 20px; */
+}
+
+.skill-list__item {
+  margin-left: 20px;
 }
 
 .my-img {
@@ -289,8 +292,30 @@ button {
   font-size: 20px;
 }
 
+
+@media screen and (max-width: 992px) {
+  .my-img {
+    display: none;
+  }
+  
+}
+
 @media screen and (max-width: 768px) {
   .my-img {
     display: none;
   }
+    .info{
+    max-height: none;
+  }
+  .skill-list {
+    flex-wrap: nowrap;
+    padding: auto;
+    width: auto;
+  }
+  .checkbox-wrapper-5 .check {
+    left: 15%;
+    top: 7%;
+    right: inherit;
+  }
+
 }
