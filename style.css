@@ -2,7 +2,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  transition: all 0.3s ease;
 }
 
 body {
@@ -205,7 +204,6 @@ button {
 .skill-list {
   display: flex;
   flex-direction: column;
-  width: 50%;
   flex-wrap: wrap;
   height: 50%;
   padding: 0;
@@ -214,6 +212,14 @@ button {
 
 .skill-list__item {
   margin-left: 20px;
+}
+
+.bold-word {
+  font-weight: bold;
+}
+
+.italic-word {
+  font-style: italic;
 }
 
 .my-img {
@@ -236,11 +242,24 @@ button {
 }
 
 .contacts__ul {
-  list-style-type: square;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   margin: 0 auto;
   width: 50%;
+  padding: 0;
+}
+
+.info__text {
+  margin-top: 10px;
+}
+
+.contacts__item {
+  margin-left: 10px;
+}
+
+.number {
+  text-align: center;
+  width: 100%;
 }
 
 .head-2,
@@ -292,6 +311,10 @@ button {
   font-size: 20px;
 }
 
+.header-4 {
+  margin-top: 15px;
+}
+
 
 @media screen and (max-width: 992px) {
   .my-img {
@@ -312,6 +335,11 @@ button {
 }
 
 @media screen and (max-width: 768px) {
+
+  body {
+    padding: 15px;
+  }
+
   .my-img {
     display: none;
   }
@@ -322,11 +350,12 @@ button {
     flex-wrap: nowrap;
     padding: auto;
     width: auto;
-    padding: 15px;
+   
   }
  
-  .about-me {
-    padding: 15px; 
+  .contacts__item{
+    width: 100%;
+    text-align: center;
   }
   
 }
